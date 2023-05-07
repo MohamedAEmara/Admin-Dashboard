@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Railway";
+    src: url("font/Raleway-VariableFont_wght.ttf");
+}
+
+
+/* ======================= Aligning Header ======================= */
+.header {
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-family: "Railway";
+}
+img {
+    max-width: 60px;
+    /* max-height: 75px; */
+    /* background-color: black; */
+}
+
+.profile > img {
+    border-radius: 30px;
+}
+
+.search > img {
+    width: 35px;
+    
+}
+
+.search > input {
+    border-radius: 20px;
+    height: 40px;
+    font-size: 30px;
+}
+
+body {
+    font-family: "Railway";
+}
+
+.bell {
+    width: 30px;
+}
+
+.bell:hover {
+    width: 35px;
+    cursor: pointer;
+}
+
+.search > img:hover {
+    cursor: pointer;
+}
+
+/* ======================= Aligning Sidebar ======================= */
