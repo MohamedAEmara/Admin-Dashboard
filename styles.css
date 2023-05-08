@@ -3,6 +3,15 @@
     src: url("font/Raleway-VariableFont_wght.ttf");
 }
 
+:root {
+    --black: #393E4D;
+    --orange: #E97D1F;
+    --gray: #97ADAD;
+    --white: #FFFFFF;
+    --red: #FF6A55;
+    --green: #2BD23C;
+
+}
 
 /* ======================= Aligning Header ======================= */
 .header {
@@ -62,4 +71,91 @@ body {
     cursor: pointer;
 }
 
+.search>input:focus {
+    border: 10px solid green;
+}
+
 /* ======================= Aligning Sidebar ======================= */
+
+/* Top */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.top > div, .middle > div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 22px;
+    gap: 30px;
+}
+
+.bottom {
+    display: flex;
+    gap: 20px;
+}
+
+
+.top>.profile:hover, .history:hover, .home:hover, .messages:hover, .tasks:hover, .communities:hover, .settings:hover, .support:hover, .privacy:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+/* body {
+    background-color: var(--black);
+    color: white;
+} */
+
+.bell{
+    
+    background-color: var(--orange);
+}
+
+.profile > img {
+    background-color: red;
+}
+
+.messages > img:hover {
+    border-radius: 10px;
+    background-color: var(--orange);
+}
+
+.history > img:hover {
+    border-radius: 25px;
+    background-color: var(--orange);
+}
+
+
+
+/* Design the grid of projects */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    gap: 40px;
+}
+
+.grid-container > *{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid var(--red);
+    border-radius: 30px;
+    padding: 20px;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 150px;
+    justify-content: space-around; 
+}
